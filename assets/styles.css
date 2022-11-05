@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(31,25,86);
+}
+p {
+  margin: 0;
+}
+
+.wrapper {
+  width: 500px;
+  height: 600px;
+  color: #fff;
+  background-color: rgb(31,25,86);
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+}
+
+/* chevrons */
+.chevron {
+  width: 3em;
+  height: 3em;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  color: rgba(243, 243, 249, 0.8);
+} 
+.chevron:disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.chevron:active:not(:disabled) {
+  transform: scale(0.9);
+}
+
+.chevron_left{
+left: 20px;
+top: 300px;
+}
+.chevron_right{
+right: 20px;
+top: 300px;
+}
+
+/* ul */
+.card {
+  width: 324px;
+  height: 472px;
+  
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 100px;
+  left: 88px;
+}
+/* li */
+.card .card__item {
+  width: 324px;
+  height: 472px;
+  margin: 0;
+  border-radius: 20px;
+  background: linear-gradient(155.14deg, rgba(0, 0, 0, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
+  filter: drop-shadow(0px 4px 49px rgba(0, 7, 72, 0.12));
+  backdrop-filter: blur(7.5px);
+  opacity: 0;
+  transition: opacity 0.7s;
+
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+.card .card__item.opacity {
+  opacity: 1;
+}
+.card .card__image-wrapper {
+  width: 285px;
+  height: 281px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+.card .card__image img {
+ width: 100%;
+ height: 100%;
+}
+.card__item .card__name {
+  font-size: 22px;
+  line-height: 33px;
+  position: relative;
+  left: 22px;
+  top: 37px;
+}
+.card__item .card__collection-name {
+  font-size: 13px;
+  line-height: 19.5px;
+  opacity: 0.7;
+  position: relative;
+  left: 22px;
+  top: 43px;
+}
+.prices {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 284px;
+  height: 60px;
+}
+.prices > p:nth-child(1),
+.prices > p:nth-child(2) {
+  font-size: 20px;
+  line-height: 30px;
+}
+.prices > p:nth-child(3),
+.prices > p:nth-child(4) {
+  font-size: 14px;
+  line-height: 21px;
+}
+.price__eth {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.price__usd {
+  position: absolute;
+top: 5px;
+right: 3px;
+}
+.price__floor-price {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+.price__percent {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+.wrapper > p {
+  text-transform: uppercase;
+  text-align: center;
+  width: 500px;
+  position: absolute;
+  top: 20px;
+}
+
+/* autoplay button */
+.toggle-button-cover {
+  display: table-cell;
+  width: 100px;
+  box-sizing: border-box;
+  height: 40px;
+
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
+
+.button-cover {
+  height: 100px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-1 .knobs:before,
+#button-1 .knobs:after,
+#button-1 .knobs span {
+  position: absolute;
+  top: 4px;
+  width: 20px;
+  height: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+}
+
+#button-1 .knobs:before {
+  content: "On";
+  color: #fff;
+  left: 4px;
+}
+
+#button-1 .knobs:after {
+  content: "Off";
+  left: 42px;
+  color: #fff;
+  background-color: #f44336;
+  opacity: 0;
+}
+
+#button-1 .knobs:before,
+#button-1 .knobs:after {
+  z-index: 2;
+}
+
+#button-1 .knobs span {
+  left: 4px;
+  background-color: #03a9f4;
+  z-index: 1;
+}
+
+#button-1 .checkbox:checked + .knobs:before {
+  opacity: 0;
+}
+
+#button-1 .checkbox:checked + .knobs:after {
+  opacity: 1;
+}
+
+#button-1 .checkbox:checked + .knobs span {
+  background-color: #fcebeb;
+  transform: scale(4);
+}

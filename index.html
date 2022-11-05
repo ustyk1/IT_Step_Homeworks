@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./assets/scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles.css">
-  <title>Document</title>
+  <script src="https://kit.fontawesome.com/42763a5787.js" crossorigin="anonymous"></script>
+  <title> </title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <button id="prev" class="chevron chevron_left">
+      <i class="fa-solid fa-circle-chevron-left fa-3x"></i>
+    </button>
+    <button id="next"class="chevron chevron_right">
+      <i class="fa-solid fa-circle-chevron-right fa-3x"></i>
+    </button>
+    <ul class="card" id="card"></ul>
+    <p>autoplay</p>
+    <div class="toggle-button-cover">
+        <div class="button r" id="button-1">
+          <input id="toggle"  type="checkbox" class="checkbox"/>
+          <div class="knobs">
+            <span></span>
+          </div>
+          <div class="layer"></div>
+        </div>
+    </div>
+  </div>
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
