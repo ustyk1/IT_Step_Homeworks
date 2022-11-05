@@ -13,13 +13,13 @@ class Card {
 }
 
 const data = [
-  new Card('card-1', '../img/image_1.png', 'COOLGUYZZ', 'Coolguyzz.io', '$2045.12', '1.5 ETH', '-12.45%'),
-  new Card( 'card-2', '../img/image_2.png', 'HyperApe', 'HyperApe.co', '$1743.4', '1.31 ETH', '-5.6%'),
-  new Card( 'card-3', '../img/image_3.png', 'CuteApe White', 'CuteApe_99', '$245.6', '0.045 ETH', '-14.5%'),
-  new Card( 'card-4', '../img/image_4.png', 'cvltB3AR', 'CVLTBEAR ', '$545', '0.88 ETH', '+12.45%'),
-  new Card( 'card-5', '../img/image_5.png', 'Lyodd$1', 'Naomi Po', '$1670', '1.156 ETH', '+12.45%'),
-  new Card( 'card-6', '../img/image_6.png', 'SneakerHead Vol.1', 'SneakerHead.Corp', '$1790', '1.4 ETH', '+67.9%'),
-  new Card( 'card-7', '../img/image_7.png', 'Azuki 3D', 'AZUKI.JP', '$1907', '1.5 ETH', '+1.6%')
+  new Card('card-1', './img/image_1.png', 'COOLGUYZZ', 'Coolguyzz.io', '$2045.12', '1.5 ETH', '-12.45%'),
+  new Card( 'card-2', './img/image_2.png', 'HyperApe', 'HyperApe.co', '$1743.4', '1.31 ETH', '-5.6%'),
+  new Card( 'card-3', './img/image_3.png', 'CuteApe White', 'CuteApe_99', '$245.6', '0.045 ETH', '-14.5%'),
+  new Card( 'card-4', './img/image_4.png', 'cvltB3AR', 'CVLTBEAR ', '$545', '0.88 ETH', '+12.45%'),
+  new Card( 'card-5', './img/image_5.png', 'Lyodd$1', 'Naomi Po', '$1670', '1.156 ETH', '+12.45%'),
+  new Card( 'card-6', './img/image_6.png', 'SneakerHead Vol.1', 'SneakerHead.Corp', '$1790', '1.4 ETH', '+67.9%'),
+  new Card( 'card-7', './img/image_7.png', 'Azuki 3D', 'AZUKI.JP', '$1907', '1.5 ETH', '+1.6%')
 ];
 
 const generateCard = ( { id, imagePath, cardName, collectionName, prices: { usd, eth, floorPrice } } ) => {
