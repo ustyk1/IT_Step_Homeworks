@@ -73,19 +73,19 @@ p {
   filter: brightness(0) saturate(100%) invert(26%) sepia(32%) saturate(1039%) hue-rotate(151deg) brightness(88%) contrast(93%);
 }
 .sidenav  a:nth-child(2)::before {
-  background-image: url('/assets/svg/pensil.svg');
+  background-image: url('../svg/pensil.svg');
 }
 .sidenav  a:nth-child(3)::before {
-  background-image: url('/assets/svg/heart.svg');
+  background-image: url('../svg/heart.svg');
 }
 .sidenav  a:nth-child(4)::before {
-  background-image: url('/assets/svg/clock.svg');
+  background-image: url('../svg/clock.svg');
 }
 .sidenav  a:nth-child(5)::before {
-  background-image: url('/assets/svg/sheild.svg');
+  background-image: url('../svg/sheild.svg');
 }
 .sidenav  a:nth-child(6)::before {
-  background-image: url('/assets/svg/settings.svg');
+  background-image: url('../svg/settings.svg');
 }
 .sidenav  a:hover:before {
   fill:#ecfeff;
