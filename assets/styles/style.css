@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+html {
+ box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  color: #0f172a;
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.links-wrap {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px solid #0f172a;
+  border-radius: 5px;
+  background-color:#e2e8f0;
+}
+
+/*___________Form styles___________*/
+.form-wrapper {
+  box-sizing: border-box;
+  font-size: 20px; 
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px 20px 20px 20px;
+  background-color: #e2e8f0;
+  
+  position: relative;
+}
+
+.form-wrapper p {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.form-col {
+  width: 30%;
+}
+
+.input-wrapper {
+  margin: 5px 0;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+input, 
+button {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1; 
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  color: #0f172a;
+}
+
+input {
+  width: 180px; 
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 1rem;
+
+  position: absolute;
+  top: 20px;
+  right: 202px;
+  box-shadow: inset 0 0 3px rgba(148, 163, 184, 0.3);
+}
+
+input[type=text]:focus, 
+button:focus {
+  background-color: #cbd5e1;
+  outline: none;
+  border: 1px solid #94a3b8;
+}
+
+button:hover {
+  background-color: #cbd5e1;
+  border-color: #94a3b8; 
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+button > i {
+  margin-right: 10px;
+  color:  #0f172a;
+}
+
+/*___________Table styles___________*/
+.table-wrapper {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+}
+.table-wrapper > p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #64748b;
+  padding: 8px 0;
+}
+
+.table-body-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 310px;
+  overflow: auto;
+  
+  position: relative;
+}
+
+table {
+  min-width: 1800px;
+  border: none;
+  border-collapse: collapse;
+  background-color: #94a3b8;
+}
+
+thead {
+  background-color: #94a3b8;
+  min-width: auto;
+  
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+thead, tbody {
+  text-align: center;
+}
+
+thead > tr > th {
+  padding: 8px 0;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #e2e8f0;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #cbd5e1;
+}
+
+td {
+  padding: 6px 20px;
+}
+
+thead > tr > th:nth-child(1),
+tbody > tr > td:nth-child(1){
+  position: sticky;
+  left: 0px;
+  background-color: #94a3b8;
+}
+
+/*___________Scrollbar styles___________*/
+.table-body-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.table-body-wrapper::-webkit-scrollbar:horizontal {
+  width: 8px;
+}
+.table-body-wrapper::-webkit-scrollbar-track:horizontal {
+  background: #cbd5e1;
+}
+.table-body-wrapper::-webkit-scrollbar-track:vertical {
+  background: #cbd5e1;
+}
+.table-body-wrapper::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+}
+.table-body-wrapper::-webkit-scrollbar-corner   {
+  background-color:  #cbd5e1;
+}
