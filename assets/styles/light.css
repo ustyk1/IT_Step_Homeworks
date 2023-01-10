@@ -1,0 +1,11 @@
+:root {
+  --screen-bg:#FAFAFA;
+  --header-bg:#FFFFFF;
+  --buttons-bg:#E9F6FF;
+  --button-active-bg:#bae6fd;
+
+  --charge-icon:url('../img/cellular-connection_black.svg');
+  --wifi-icon:url('../img/wifi_black.svg');
+  --capacity-icon:url('../img/capacity_black.svg');
+  --text-color: #000000;
+}

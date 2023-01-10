@@ -5,10 +5,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./assets/scripts.js"></script>
-  <link rel="stylesheet" href="./assets/styles.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="stylesheet" href="./assets/styles/light.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="./assets/styles/dark.css" media="(prefers-color-scheme: dark)">
+  <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+  <title>Calculator</title>
 </head>
 <body>
-  
+  <div class="calculator">
+    <div class="calculstor__header header">
+      <div class="header__time">9:41</div>
+      <div class="header__phone-indicators">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="calculstor__screen screen">
+      <div>
+        <input class="screen__input" type="text" name="" id="" value="50 + 50">
+        <div class="screen__answer">100</div>
+      </div>
+    </div>
+    <div class="calculator__buttons">
+      <ul>
+        <li class="red">C</li>
+        <li class="blue">%</li>
+        <li><img src="./assets/img/flag.svg" alt=""></li>
+        <li class="blue">&divide;</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li class="blue">&times;</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li class="blue">-</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="blue">+</li>
+        <li>.</li>
+        <li>0</li>
+        <li><img src="./assets/img/history.svg" alt=""></li>
+        <li class="blue">=</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
