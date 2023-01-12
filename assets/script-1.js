@@ -48,7 +48,7 @@ class Calculator {
     const current = parseFloat(this.currentOperand);
 
     if (this.previousOperand === '') {
-      current = current / 100;
+      this.currentOperand = current / 100;
     } else if ( this.previousOperand !== '' ) {
       switch (this.operation) {
         case '+':
