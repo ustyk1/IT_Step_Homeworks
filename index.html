@@ -1,14 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  id="html">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./assets/scripts.js"></script>
-  <link rel="stylesheet" href="./assets/styles.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="../dist/output.css">
+  <title>Kreativ</title>
 </head>
-<body>
-  
+<body class="
+  bg-gradient-to-br from-prussian-blue to-downy bg-fixed
+  h-full w-full 
+  flex justify-center items-center">
+  <div class="wrapper 
+    w-[1440px] h-auto md:h-[1024px]
+    relative flex">
+    <header class=" 
+      w-full py-[20px] px-[30px] 
+      absolute top-0 right-0	left-0 
+      flex gap-[10px] justify-between items-center 
+      sm:py-[40px] sm:px-[60px]">
+      <div class="logo 
+        text-transparent text-2xl 
+        bg-clip-text bg-gradient-to-r from-blue-bayoux via-juniper to-san-juan font-bold 
+        dark:from-sinbad dark:via-ziggurat dark:to-san-juan">Kreativ</div>
+      <nav class="">
+        <ul class="flex justify-between items-center gap-[10px] 
+        text-dark-blue font-bold 
+        dark:text-white 
+        sm:gap-[25px]">
+          <li>Home</li>
+          <li>Contact</li>
+          <li>
+            <span class="cursor-pointer" id="modeBtn">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="w-6 h-6">
+                <path 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+              </svg>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="form form-wrapper 
+      bg-white flex-[54%] px-[30px] pt-[100px] pb-[30px] 
+      flex flex-col items-center 
+      dark:bg-dark-form-bg dark:text-white 
+      xs:pt-[200px] 
+      md:pb-[0px]">
+      <p class="form-header text-2xl mb-[40px] w-full max-w-[400px] font-bold xs:mb-[80px]">Let’s get you started</p>
+      <form action="" class="w-full max-w-[400px]">
+        <ul class="flex flex-col gap-[25px]">
+          <li class="flex flex-col gap-[5px]">
+            <label for="" class="text-base">Full name</label>
+            <input 
+              type="text" 
+              placeholder="Ade Tiger" 
+              class="min-w-[260px] max-w-[400px] py-[7px] px-[10px] border border-gray-light rounded shadow-input 
+              focus:outline-0	focus:border-input-focus focus:shadow-inp-focus 
+              dark:bg-transparent">
+          </li>
+          <li class="flex flex-col gap-[5px]">
+            <label for="" class="text-base">Email address</label>
+            <input 
+              type="text" 
+              placeholder="yourname@email.com"
+              class="border border-gray-light rounded min-w-[260px] max-w-[400px] py-[7px] px-[10px] shadow-input 
+              focus:outline-0	focus:border-input-focus focus:shadow-inp-focus 
+              dark:bg-transparent">
+          </li>
+          <li class="flex flex-col gap-[5px] relative">
+            <label for="" class="text-base">Phone number</label>
+            <input 
+            type="text"
+            placeholder="800  2738  9700"
+            class="border border-gray-light rounded min-w-[260px] max-w-[400px] py-[7px] pl-[70px] pr-[5px] shadow-input 
+            xs:py-[7px] xs:pl-[110px] xs:pr-[10px] 
+            focus:outline-0	focus:border-input-focus focus:shadow-inp-focus 
+            dark:bg-transparent">
+            <p class="w-fit absolute top-[37px] left-3 flex items-center gap-[5px]">
+              <span class="w-5 h-4 bg-flag bg-cover bg-center bg-no-repeat hidden xs:inline-block"></span>
+              <span class="inline-block	w-3 h-2 bg-arrow-down bg-cover bg-center bg-no-repeat"></span>
+              <span class="ml-[0px] xs:ml-[7px]">+234</span>
+            </p>
+          </li>
+          <li class="flex flex-col gap-[5px] relative">
+            <label for="" class="text-base">Create password</label>
+            <input 
+            type="text"
+            class="border border-gray-light rounded min-w-[260px] max-w-[400px] shadow-input py-[7px] px-[10px]
+            focus:outline-0	focus:border-input-focus focus:shadow-inp-focus dark:bg-transparent"> 
+            <div>
+              <p class="mb-[8px] text-gray-light text-xs">Password must contain a minimum of 8 characters</p>
+              <p class="text-gray-light text-xs">Password must contain at least one symbol e.g. @, !</p>
+            </div>
+            <p class="w-full px-[16px] flex justify-between items-center gap-[5px] absolute top-[41px]">
+              <span class="inline-block	w-[105px] h-2 bg-dots bg-cover bg-center bg-no-repeat"></span>
+              <span class="inline-block	w-4 h-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4  dark:stroke-[#fff]">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                </svg>
+              </span>
+            </p>
+          </li>
+          <li class="flex flex-col gap-[5px] relative">
+            <label for="" class="text-base">Location 
+              <span class="text-xs text-gray-light relative left-3">(Optional)</span></label>
+            <input 
+              type="text"
+              placeholder="Select Location"
+              class="border border-gray-light rounded min-w-[260px] max-w-[400px] py-[7px] px-[10px] shadow-input 
+              focus:outline-0	focus:border-input-focus focus:shadow-inp-focus dark:bg-transparent">
+            <span class="inline-block	w-3 h-2 bg-arrow-down bg-cover bg-center bg-no-repeat absolute top-[45px] right-5"></span>
+          </li>
+          <li class="">
+            <button
+              class="bg-button-light w-full min-w-[260px] max-w-[400px] py-[10px] px-[30px] rounded font-bold text-white 
+              active:scale-95	dark:bg-button-dark">Sign Up</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="greetings hidden p-[30px] bg-gradient-to-br from-cutty-sark to-cello flex-[46%] justify-center items-center 
+    dark:from-jacksons-purple dark:to-watercourse md:flex">
+      <h1 class="text-white text-5xl leading-[75px] max-w-[410px] max-h-[580px] lg:text-64 lg:leading-[96px]">Rapidly build modern websites without ever leaving your HTML.</h1>
+    </div>
+  </div>
+  <script>
+    document.getElementById('modeBtn').addEventListener('click', () => {
+      document.getElementById('html').classList.toggle('dark');
+    })
+  </script>
 </body>
 </html>
