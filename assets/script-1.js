@@ -6,6 +6,7 @@ const allClearButton = document.querySelector('[data-all-clear]');
 const previousOperandTextElement = document.querySelector('[data-previous-operand]');
 const currentOperandTextElement = document.querySelector('[data-current-operand]');
 const percentButton = document.querySelector('[data-perсent]');
+const historyButton = document.querySelector('[data-history]');
 
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
@@ -15,13 +16,19 @@ class Calculator {
   }
 
   clear() {
+    this.lastOperand = this.currentOperand;
     this.currentOperand = '';
     this.previousOperand = '';
     this.operation = undefined;
   }
 
   delete1() {
+    this.lastOperand = this.currentOperand;
     this.currentOperand = this.currentOperand.toString().slice(0, -1);
+  }
+
+  getLastOperand() {
+    this.currentOperand = this.lastOperand;
   }
 
   appendNumber(number) {
@@ -46,7 +53,7 @@ class Calculator {
     let result;
     const prev = parseFloat(this.previousOperand);
     const current = parseFloat(this.currentOperand);
-
+   
     if (this.previousOperand === '') {
       this.currentOperand = current / 100;
     } else if ( this.previousOperand !== '' ) {
@@ -57,21 +64,22 @@ class Calculator {
           break
         case '-':
           const ris = prev - (current / 100 * prev);
-          result = ris;
+          result = +ris.toFixed(8);
           break
         case '*':
           const dob = prev * (current / 100);
-          result = dob;
+          result = +dob.toFixed(8);
           break
         case '÷':
           const chac = prev / (current / 100);
-          result = chac;
+          result = +chac.toFixed(8);
           break
       }
 
       this.currentOperand = result;
       this.operation = undefined;
       this.previousOperand = '';
+      this.lastOperand = this.currentOperand;
     }
   }
 
@@ -103,6 +111,7 @@ class Calculator {
     this.currentOperand = computation;
     this.operation = undefined;
     this.previousOperand = '';
+    this.lastOperand = this.currentOperand;
   }
 
   getDisplayNumber(number) {
@@ -173,3 +182,8 @@ deleteButton.addEventListener('click', button => {
   calculator.delete1()
   calculator.updateDisplay()
 });
+
+historyButton.addEventListener('click', button => {
+  calculator.getLastOperand()
+  calculator.updateDisplay()
+})
