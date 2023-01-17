@@ -541,6 +541,10 @@ video {
   left: 0.75rem;
 }
 
+.right-\[20px\] {
+  right: 20px;
+}
+
 .top-\[41px\] {
   top: 41px;
 }
@@ -628,10 +632,6 @@ video {
 
 .w-3 {
   width: 0.75rem;
-}
-
-.w-\[105px\] {
-  width: 105px;
 }
 
 .w-4 {
@@ -729,10 +729,6 @@ video {
   background-image: url('../src/img/arrow-down.svg');
 }
 
-.bg-dots {
-  background-image: url('../src/img/dots.png');
-}
-
 .from-prussian-blue {
   --tw-gradient-from: #003757;
   --tw-gradient-to: rgb(0 55 87 / 0);
@@ -813,11 +809,6 @@ video {
   padding-right: 10px;
 }
 
-.px-\[16px\] {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -890,6 +881,40 @@ video {
   --tw-shadow: 0 2px 2px 2px rgba(204, 204, 204, 0.1);
   --tw-shadow-colored: 0 2px 2px 2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.placeholder\:text-\[64px\]::-moz-placeholder {
+  font-size: 64px;
+}
+
+.placeholder\:text-\[64px\]::placeholder {
+  font-size: 64px;
+}
+
+.placeholder\:tracking-wide::-moz-placeholder {
+  letter-spacing: 0.025em;
+}
+
+.placeholder\:tracking-wide::placeholder {
+  letter-spacing: 0.025em;
+}
+
+.placeholder\:text-gray-light::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-light::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-::-moz-placeholder {
+  color: ;
+}
+
+.placeholder\:text-::placeholder {
+  color: ;
 }
 
 .focus\:border-input-focus:focus {
